@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>
+To calculate sum of array elements
+</title> </head>
+<link rel="stylesheet" href="all.css">
+<body style="background-image: url(code2.jpg);background-repeat: no-repeat; BACKGROUND-SIZE:100% 100%; 
+">
+<m>CODE:</m>
+<br>
+import java.util.*;
+<br>
+class Array1
+<br>
+{
+<br>
+&nbsp;public static void main(String args[])
+<br>
+&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;int n,i,sum=0;
+<br>
+&nbsp;&nbsp;&nbsp;double avg;
+<br>
+&nbsp;&nbsp;&nbsp;Scanner sc=new Scanner(System.in);
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("enter n");
+<br>
+&nbsp;&nbsp;&nbsp;n=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;int a[]=new int[n];
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("enter elements");
+<br>
+&nbsp;&nbsp;&nbsp;for(i=0;i<n;i++)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i]=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sum=sum+a[i];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;avg=sum/n;
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("Sum="+sum);
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("Average="+avg);
+<br>
+&nbsp;&nbsp;}
+<br>
+}
+<br>
+<br><br> <br> <br><m>EXPLANATION:</m><br><br>
+<p> In the above program we have a  <span>variable sum</span> which will store the 
+sum of array elements. 
+<br>
+We begin with user input take the value of n and ask the user to enter n elements.
+<br>
+Then we will have a for loop which will start with 0 and go upto n-1 (as less than n and not
+equal to n) 
+<br>
+i begins with 0 and the 1st element is added to sum which is initialised to 0.<br>
+As the i gets increments, next element will be added to the sum
+and the final sum will be stored in the variable sum. </p>
+</body>
+</html>
+

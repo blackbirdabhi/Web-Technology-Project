@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>
+String and String Buffer
+</title> </head>
+<link rel="stylesheet" href="all.css">
+<body style="background-image: url(code2.jpg);background-repeat: no-repeat; BACKGROUND-SIZE:100% 100%; color:#FFFFFF  
+">
+<m> What is a String? </m>
+<br>
+<p>In java, string is basically an object that represents sequence of char values.
+
+An array of characters works same as java string.
+<br>
+</span>Example:</span>
+<br>
+char[] ch={'h','e','l','l','o'};  
+<br>
+String s=new String(ch);  
+<br>
+is same as:
+<br>
+String s="hello";  
+<br>
+The java String is immutable i.e. it cannot be changed but a new instance is created.
+<br>
+Generally, string is a sequence of characters. But in java, string is an object that represents a sequence of characters. String class is used to create string object.
+<br>
+
+<br> <br> <br> <m> Declaration: </m> <br> <br>
+There are <span>two ways</span> to create String object:<br>
+<ul>
+<li>By string literal:</li> <br>
+<p>Java String literal is created by <span>using double quotes.</span> For Example:
+<br>
+String s="welcome";  </p>
+<br> <br>
+
+<li>By new keyword :</li> <br>
+String s=new String("Welcome");//<span>creates two objects and one reference variable </span>
+<br> 
+<p>In such case, JVM will create a new string object in normal heap memory 
+and the literal "Welcome" will be placed in the string constant pool. 
+The variable s will refer to the object in heap. </p>
+<br> <br> <br> <br> <m> Basic String Methods: </m <br> <br> <br>
+<li><span>length()</span> returns the length of the string</li><br>
+<li><span>toLowerCase()</span> converts the string to lower case</li><br>
+<li><span>toUpperCase()</span> converts the string to upper case</li><br>
+<li><span>replace(char, char)</span> replaces occurrences of one character with another character. </li> <br>
+<li><span>concat(String)</span> method allows two strings to be concatenated together </li> <br>
+<p><m>Substrings of a String object can also be accessed</p></m>
+<li>A portion of String object can be copied to a character array using the <span>getChars()</span> method</li> <br>
+<li>The <span>substring()</span> method can return substring beginning at a specified offset</li> <br>
+<p> <m> Methods of searching strings </m> </p> <br>
+<li><span>indexOf(x)</span> searches for the first occurrence of x</li>
+<li><span>indexOf(x, y)</span> searches for the first occurrence of x after the offset of y </li>
+<li><span>lastIndexOf(x)</span> searches backwards for the first occurrence of x</li>
+<li><span>lastIndexOf(x, y)</span> searches backwards for the first occurrence of x after the offset of y</li>
+
+<br> <br> 
+ <a href="Test.html" target="JavaIntroPage"><font color ="white" face="Verdana"><I><strong>Example program</a>
+
+</body>
+</html>

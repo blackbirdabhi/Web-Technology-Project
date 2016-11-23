@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>
+Multi dimensional Array
+</title> </head>
+<link rel="stylesheet" href="all.css">
+<body style="background-image: url(code2.jpg);background-repeat: no-repeat; BACKGROUND-SIZE:100% 100%; 
+">
+<m> Question </m>
+<p>Write a program which stores information about n players in a two
+
+dimensional array. The array should contain number of rows equal to number 
+
+of players. Each row will have number of columns equal to number of matches 
+
+played by that player which may vary from player to player. The program 
+
+should display player number (index +1), runs scored in all matches and its 
+
+batting average as output. (It is expected to assign columns to each row 
+
+dynamically after getting value from user. </p>
+<br> <br> <br>
+<m>CODE:</m>
+<br>
+import java.util.*;
+<br>
+class Player
+<br>
+{
+<br>
+&nbsp;public static void main(String args[])
+<br>
+&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;int n,m,i,j,s,sum;
+<br>
+&nbsp;&nbsp;&nbsp;double avg;
+<br>
+&nbsp;&nbsp;&nbsp;Scanner sc=new Scanner(System.in);
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("enter no. of players");
+<br>
+&nbsp;&nbsp;&nbsp;n=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;int a[][]=new int[n][];
+<br>
+&nbsp;&nbsp;&nbsp;for(i=0;i<n;i++)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("enter the no. of matches played by player"+(i+1)+" =");
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i]=new int [m];
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum=0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(j=0;j<a[i].length;j++)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter the score of"+(j+1)+" match:");
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Runs scored in"+(j+1)+" match="+s);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum=sum+s;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Total runs scored by"+(i+1)+" player="+sum);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avg=sum/m;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Batting Average="+avg);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;}
+<br>
+}
+<br>
+<br><br> <br> <br><m>EXPLANATION:</m><br><br>
+<br> <br> <m> What is a multi-dimensional Array? </m> <br>
+<p>The arrays you have been using so far have only held one column of data. But you can set up an array to hold more than one column. These are called multi-dimensional arrays
+A multi dimensional array is therefore <span>also called as arrays of arrays.</span> You set them up like this:
+<br> <br>
+<m> Declaration: </m>
+<br>
+int aryNumbers[][] = new int[6][5];
+<br>
+They are set up in the same way as a normal array, except you have two sets of square brackets. The first set of square brackets is for the rows and the second set of square brackets is for the columns. </p>
+</body>
+</html>

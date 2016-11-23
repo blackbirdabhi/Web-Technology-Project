@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>
+To find Largest of 2 nos.
+</title> </head>
+<link rel="stylesheet" href="all.css">
+<body style="background-image: url(code2.jpg);background-repeat: no-repeat; BACKGROUND-SIZE:100% 100%; 
+">
+<br> <br> <m> Question: </m> <br>
+<p> Create a Class StringManipulation with the following member
+
+functions.
+
+FindFrequencyCount() : the function will accept any character and 
+
+will display the total number of appearances of the given character 
+
+in the String.
+
+ReplaceCharacter() : the function will modify the given string to 
+
+replace the first character of the string by its equivalent upper case. </p>
+<br>
+<m>CODE:</m>
+<br>
+import java.util.*;
+<br>
+class StringManuplation
+<br>
+{
+<br>
+&nbsp;public static void main(String args[])
+<br>
+&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;String s;
+<br>
+&nbsp;&nbsp;&nbsp;int a;
+<br>
+&nbsp;&nbsp;&nbsp;char c;
+<br>
+&nbsp;&nbsp;&nbsp;Scanner sc=new Scanner(System.in);
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("enter a string");
+<br>
+&nbsp;&nbsp;&nbsp;s=sc.nextLine();
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("enter the character to be found");
+<br>
+&nbsp;&nbsp;&nbsp;c=sc.nextLine.charAt(0);
+<br>
+&nbsp;&nbsp;&nbsp;StringManuplation s1=new StringManuplation();
+<br>
+&nbsp;&nbsp;&nbsp;a=s1.FrequencyCount();
+<br>
+&nbsp;&nbsp;&nbsp;System.out.println("Character has occured "+a+" times");
+<br>
+&nbsp;&nbsp;&nbsp;s1.ReplaceCharacter();
+<br>
+&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;int FrequencyCount()
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i,k=0;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0;i<s.length();i++)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(c==s.charAt(i))
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;;k++;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("character not found");
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return k;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;&nbsp;void ReplaceCharacter()
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char d[]=s.tocharArray();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0;i<s.length();i++)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i==0||d[i-1]==' ')
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d[i]=s.toUpperCase();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(d[i]);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;}
+<br>
+}
+<br>
+</body>
+</html>
+

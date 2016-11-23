@@ -1,0 +1,23 @@
+body,p
+{
+color: white;
+face: Verdana;
+font-height: 20px;
+}
+
+span
+{
+color: yellow;
+font-weight: bold;
+text-shadow: 2px 2px red;
+font-height: 20px;
+}
+
+m
+{
+color: white;
+text-shadow: 2px 2px blue;
+font-height: 30px;
+font-weight: bold;
+}
+                                     

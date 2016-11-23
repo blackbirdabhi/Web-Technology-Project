@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="all.css">
+<title>
+GCD & LCM
+</title> </head>
+<body background="code2.jpg"style="background-repeat: no-repeat; BACKGROUND-SIZE:100% 100%; 
+">
+<m>CODE:</m>
+<br>
+import java.util.*;
+<br>
+class GcdLcm
+<br>
+{
+<br>
+&nbsp; static int gcd(int a,int b)
+<br>
+&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;if(a%b==0)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return b;
+<br>
+&nbsp;&nbsp;&nbsp;else
+<br>
+&nbsp;&nbsp;&nbsp;return gcd(b,a%b);
+<br>
+&nbsp;&nbsp;}
+<br>
+&nbsp;&nbsp;public static void main(String args[])
+<br>
+&nbsp;&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int a,b,r,prod=1,gcd,lcm;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scanner sc=new Scanner(System.in);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("enter a & b");
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b=sc.nextInt();
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prod=a*b;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gcd=gcd(a,b);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cm=prod/gcd;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("GCD="+gcd);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("LCM="+lcm);
+<br>
+&nbsp;&nbsp;&nbsp;}
+<br>
+}
+<br>
+<m> EXPLANATION: </m>
+<p>The java code above utilizes the <span>Euclidean algorithm</span>: that the GCD(a,b)=GCD(a-b,b). It also uses the fact that GCD(a,a)=a and a*b=GCD(a,b)*LCM(a,b). The GCD is found <span>recursively</span>: if a!=b, find GCD of the lower form, until a=b. This is guaranteed by the Euclidean algorithm.</p>
+</body>
+</html>                                       

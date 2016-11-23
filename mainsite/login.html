@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<style type="text/css"> 
+
+   .styled-button-7 {
+	padding:8px 20px;
+	color:#cfebf3;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:13px;
+	border-radius:40px;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
+	border:1px solid #095B7E
+}
+    h1{
+        color: red;
+    }
+             
+</style>
+
+        <script>
+            function checkvalid() {
+                var x=document.adminlogin.uname.value;
+                var y=document.adminlogin.pw1.value;
+                if(x==="") {
+                    alert("Please enter the email address/username");
+                    document.feedback.email.focus();
+                    return false;
+                }
+                if(y==="") {
+                    alert("Please enter the password");
+                    document.feedback.email.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+
+<div><h1><CENTER>CODEFREAK USER LOGIN</CENTER> </h1><img align="left" src="LOGO.jpg"/>
+<div style="text-align:CENTER;FONT COLOR=BLACK">
+<ul>
+  <a href="contact.html" class="styled-button-7"><b>CONTACT US</b></a>
+  <a href="home1.html" class="styled-button-7"><b>HOME</b></a>
+  <a href="QUICKSEARCH.html" class="styled-button-7"><b>LEARN</b></a>
+  <a href="faq.html" class="styled-button-7"><b>FAQ</b></a>
+  <a href="login.html" class="styled-button-7"><b>REGISTER</b></a>
+
+ </ul>
+</div>
+<br>
+<br>
+<br>
+
+	<section class="loginform cf">
+		<form name="login" action="validate.php" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="text" name="uname" placeholder="Username" required>
+				</li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" name="pw1" placeholder="Password" required></li>
+				<li>
+					<input type="submit" value="Submit" onclick="checkvalid()">
+				</li>
+			</ul>
+		</form>
+	</section>
+</body>
+</html>
